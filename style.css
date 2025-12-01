@@ -685,44 +685,63 @@ footer p {
 }
 
 
-@media screen and (max-width: 768px) {
-    #hero-home {
-        flex-direction: column;
-        padding: 30px 20px;
-    }
-
-    #hero-home-image {
-        width: 100%;
-        height: auto;
-        margin-left: 0;
-    }
-
-    .hero-home-text {
-        width: 100%;
+@media (max-width: 768px) {
+    
+    /* Hero */
+    .hero-inner {
+        flex-direction: column !important;
         text-align: center;
+        padding: 32px 16px;
     }
 
-    .about-home-content,
-    .location-home-wrapper,
-    .menu-home-items {
-        flex-direction: column;
-        align-items: center;
+    .hero-inner h1 {
+        font-size: 2rem;
     }
 
-    .about-home-text,
-    .about-home-image,
-    .location-home-info,
-    .map-home-container,
-    .menu-home-item {
-        width: 100%;
-        margin: 0;
+    .hero-inner p {
+        font-size: 1rem;
     }
 
-    .menu-home-item img {
+    /* Sections générales */
+    section {
+        padding: 40px 16px !important;
+    }
+
+    /* Images */
+    img {
+        max-width: 100%;
         height: auto;
     }
 
-    #menu-home, #about-home, #reviews, #location-home {
-        padding: 40px 20px;
+    /* Flex containers */
+    .container {
+        width: 100% !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    /* Header / Nav */
+    header {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 12px;
+        padding: 16px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    /* Boutons */
+    button {
+        width: 80% !important;
+        max-width: 300px;
+    }
+
+    /* Review slides ou cartes */
+    .review-slide, .card {
+        width: 90% !important;
+        margin: 16px auto;
     }
 }
